@@ -4,10 +4,9 @@ WPFlexSlider is a WordPress plugin to display galleries using WooThemes popular 
 
 ## Install
 
-* Spin the cube with the arrow buttons. 
-* Click on an empty square to see its clue. Click again to switch between down and across clues.               
-* Answers turn green when they are correct. Correct letters are locked and cannot be changed.
-* Get points for completing words faster than your opponents! Longer words get you more points!
+* Download, Unzip and drop the plugin in your /wp-content/plugins/ directory
+* Enable the plugin through the WordPress admin
+* That's it!
 
 ## How to use
 
