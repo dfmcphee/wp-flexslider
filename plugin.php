@@ -138,7 +138,8 @@
 		public static function add_wpflexslider_script() {
 			wp_enqueue_script(
 				'wpflexslider-plugin',
-				plugins_url('/js/jquery.flexslider-min.js', __FILE__)
+				plugins_url('/js/jquery.flexslider-min.js', __FILE__),
+				array( 'jquery' )
 			);
 		}
 		
@@ -148,7 +149,8 @@
 		public static function add_main_script() {
 			wp_enqueue_script(
 				'wpflexslider-main',
-				plugins_url('/js/main.js', __FILE__)
+				plugins_url('/js/main.js', __FILE__),
+				array( 'jquery' )
 			);
 		}
 		
