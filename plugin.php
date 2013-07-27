@@ -55,7 +55,13 @@
 				
 				foreach ($attachment_ids as $attachment_id) {
 					$attachment = wp_get_attachment_image_src($attachment_id, 'wp-resp-slide');
-					$gallery .= '<li><img src="' . $attachment[0] . '" /></li>';
+					$attachment_info = get_post($attachment_id);
+					$gallery .= '<li>';
+					$gallery .= '<img src="' . $attachment[0] . '" />';
+					if ($attachment_info->post_excerpt) {
+    					$gallery .= '<p class="flex-caption">' . $attachment_info->post_excerpt . '</p>';
+					}
+					$gallery .= '</li>';
 				}
 				
 				$gallery .= '</ul>';
